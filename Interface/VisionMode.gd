@@ -1,6 +1,6 @@
 extends CanvasModulate
 
-const DARK = Color("0e0e0e")
+const DARK = Color("1f1f1f")
 const NIGHTVISION = Color("37bf62")
 
 var sound_cooldown = false
