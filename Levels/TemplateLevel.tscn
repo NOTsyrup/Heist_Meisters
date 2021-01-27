@@ -1,0 +1,230 @@
+[gd_scene load_steps=20 format=2]
+
+[ext_resource path="res://Tiles/Tiles.tres" type="TileSet" id=1]
+[ext_resource path="res://Characters/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://GFX/Tilesheet/tilesheet_complete.png" type="Texture" id=3]
+[ext_resource path="res://Interface/VisionMode.tscn" type="PackedScene" id=4]
+
+[sub_resource type="OccluderPolygon2D" id=8]
+polygon = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=1]
+points = PoolVector2Array( 64, 0, 64, 64, 0, 64, 0, 0, 0, 0 )
+
+[sub_resource type="OccluderPolygon2D" id=9]
+polygon = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=2]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="OccluderPolygon2D" id=10]
+polygon = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=3]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="OccluderPolygon2D" id=11]
+polygon = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="ConvexPolygonShape2D" id=4]
+points = PoolVector2Array( 0, 0, 64, 0, 64, 64, 0, 64 )
+
+[sub_resource type="OccluderPolygon2D" id=5]
+polygon = PoolVector2Array( 8, 16, 8, 16, 16, 8, 48, 8, 56, 16, 56, 48, 48, 56, 16, 56, 8, 48 )
+
+[sub_resource type="ConvexPolygonShape2D" id=6]
+points = PoolVector2Array( 48, 8, 56, 16, 56, 56, 8, 56, 8, 16, 16, 8, 16, 8 )
+
+[sub_resource type="OccluderPolygon2D" id=12]
+polygon = PoolVector2Array( 15.2223, 21.0703, 15.3002, 21.1481, 22.8552, 20.0577, 27.7621, 19.9799, 32.1238, 21.5376, 44.8192, 13.0479, 54.0098, 13.1258, 54.8666, 13.1258, 55.4896, 22.7838, 48.402, 33.9994, 49.804, 38.5168, 50.1155, 47.4738, 49.1809, 50.9008, 48.0126, 52.2249, 43.4951, 52.3027, 31.1891, 43.7352, 29.865, 40.5419, 24.5687, 40.3861, 13.8204, 33.9994, 9.84814, 27.9243, 10.0039, 24.1078 )
+
+[sub_resource type="ConvexPolygonShape2D" id=13]
+points = PoolVector2Array( 20, 20, 20, 20, 28, 20, 32, 20, 35.4729, 18.7434, 40, 16, 44, 12, 52, 12, 56, 16, 56, 24, 49.0251, 36.19, 49.6482, 47.7951, 48, 52, 44, 52, 31.5006, 43.8228, 22.3101, 39.1497, 10.4713, 28.3234, 10.6271, 24.0397 )
+
+[sub_resource type="OccluderPolygon2D" id=14]
+polygon = PoolVector2Array( 13.693, 21.8686, 13.7865, 21.9621, 24.4414, 20.1862, 30.7035, 16.1673, 38.8348, 16.1673, 45.0969, 13.3634, 53.6021, 13.4568, 54.8171, 14.2046, 55.0975, 22.8032, 50.9851, 31.3084, 50.4243, 46.543, 48.2747, 52.0574, 43.9753, 52.4313, 34.442, 47.2908, 31.2643, 47.1038, 9.95447, 27.9437, 10.6088, 23.4575 )
+
+[sub_resource type="ConvexPolygonShape2D" id=15]
+points = PoolVector2Array( 19.3009, 20.3732, 19.3009, 20.2797, 24.3479, 20.0928, 30.2361, 15.9804, 38.9282, 16.0739, 45.0034, 12.9895, 53.976, 12.8961, 55.0975, 14.0176, 55.0975, 22.4294, 50.9851, 31.1215, 50.1439, 47.2908, 48.1812, 52.2443, 44.0688, 52.5247, 34.7224, 47.1038, 31.4512, 47.3842, 20.6094, 38.2248, 9.67407, 27.8503, 9.95447, 24.2052 )
+
+[sub_resource type="TileSet" id=7]
+0/name = "tilesheet_complete.png 0"
+0/texture = ExtResource( 3 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 1472, 1088, 64, 64 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/occluder = SubResource( 8 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape = SubResource( 1 )
+0/shape_one_way = false
+0/shape_one_way_margin = 1.0
+0/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 1 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+0/z_index = 0
+1/name = "tilesheet_complete.png 1"
+1/texture = ExtResource( 3 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 1280, 1088, 64, 64 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/occluder = SubResource( 9 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape = SubResource( 2 )
+1/shape_one_way = false
+1/shape_one_way_margin = 1.0
+1/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 2 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+1/z_index = 0
+2/name = "tilesheet_complete.png 2"
+2/texture = ExtResource( 3 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 1344, 1088, 64, 64 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/occluder = SubResource( 10 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape = SubResource( 3 )
+2/shape_one_way = false
+2/shape_one_way_margin = 1.0
+2/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 3 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+2/z_index = 0
+3/name = "tilesheet_complete.png 3"
+3/texture = ExtResource( 3 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 1408, 1088, 64, 64 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/occluder = SubResource( 11 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shape_offset = Vector2( 0, 0 )
+3/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+3/shape = SubResource( 4 )
+3/shape_one_way = false
+3/shape_one_way_margin = 1.0
+3/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 4 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+3/z_index = 0
+4/name = "tilesheet_complete.png 4"
+4/texture = ExtResource( 3 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 1152, 1152, 64, 64 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/occluder = SubResource( 5 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape = SubResource( 6 )
+4/shape_one_way = false
+4/shape_one_way_margin = 1.0
+4/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 6 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+4/z_index = 0
+5/name = "tilesheet_complete.png 5"
+5/texture = ExtResource( 3 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 1280, 448, 64, 64 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/occluder = SubResource( 12 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape = SubResource( 13 )
+5/shape_one_way = false
+5/shape_one_way_margin = 1.0
+5/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 13 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+5/z_index = 0
+6/name = "tilesheet_complete.png 6"
+6/texture = ExtResource( 3 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 1600, 256, 64, 64 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/occluder = SubResource( 14 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape = SubResource( 15 )
+6/shape_one_way = false
+6/shape_one_way_margin = 1.0
+6/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 15 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+6/z_index = 0
+
+[node name="TemplateLevel" type="Node2D"]
+
+[node name="Navigation2D" type="Navigation2D" parent="."]
+
+[node name="TileMap" type="TileMap" parent="Navigation2D"]
+tile_set = ExtResource( 1 )
+collision_layer = 2
+collision_mask = 5
+format = 1
+tile_data = PoolIntArray( -720899, 1, 0, -720898, 1, 2, -720897, 1, 2, -786432, 1, 2, -786431, 1, 2, -786430, 1, 2, -786429, 1, 2, -786428, 1, 1, -655363, 1, 65538, -655362, 3, 1, -655361, 3, 1, -720896, 3, 1, -720895, 3, 1, -720894, 3, 1, -720893, 3, 1, -720892, 1, 65538, -589827, 1, 65538, -589826, 3, 1, -589825, 3, 1, -655360, 3, 3, -655359, 3, 3, -655358, 3, 1, -655357, 3, 1, -655356, 1, 65538, -524291, 1, 65538, -524290, 3, 1, -524289, 3, 1, -589824, 3, 3, -589823, 3, 5, -589822, 3, 1, -589821, 3, 1, -589820, 1, 65538, -458755, 1, 65538, -458754, 3, 1, -458753, 3, 1, -524288, 3, 1, -524287, 3, 1, -524286, 3, 1, -524285, 3, 1, -524284, 1, 65538, -393219, 1, 65536, -393218, 1, 2, -393217, 1, 2, -458752, 1, 2, -458751, 1, 2, -458750, 1, 2, -458749, 1, 2, -458748, 1, 65537 )
+
+[node name="Destinations" type="Node" parent="Navigation2D"]
+
+[node name="Furniture" type="TileMap" parent="Navigation2D"]
+tile_set = SubResource( 7 )
+format = 1
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 54.2646, -573.808 )
+
+[node name="VisionMode" parent="." instance=ExtResource( 4 )]
+
+[node name="Cameras" type="Node" parent="."]
+
+[node name="Guards" type="Node" parent="."]
