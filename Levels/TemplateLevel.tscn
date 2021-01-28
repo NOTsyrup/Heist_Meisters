@@ -218,6 +218,8 @@ tile_data = PoolIntArray( -720899, 1, 0, -720898, 1, 2, -720897, 1, 2, -786432, 
 
 [node name="Furniture" type="TileMap" parent="Navigation2D"]
 tile_set = SubResource( 15 )
+collision_layer = 2
+collision_mask = 5
 format = 1
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
@@ -232,3 +234,5 @@ position = Vector2( 54.2646, -573.808 )
 [node name="Doors" type="Node" parent="."]
 
 [node name="LockedDoors" type="Node" parent="."]
+
+[node name="Computers" type="Node" parent="."]
