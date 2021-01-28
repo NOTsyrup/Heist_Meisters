@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Doors/Door.tscn" type="PackedScene" id=1]
+[ext_resource path="res://GFX/PNG/Tiles/tile_463.png" type="Texture" id=2]
+[ext_resource path="res://Interface/Numpad.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Doors/LockedDoor.gd" type="Script" id=4]
+
+[sub_resource type="OccluderPolygon2D" id=1]
+polygon = PoolVector2Array( -32.0185, -8.2431, -31.9301, 8.32972, 31.9746, 8.41811, 31.9304, -8.33149 )
+
+[node name="LockedDoor" instance=ExtResource( 1 )]
+script = ExtResource( 4 )
+
+[node name="DoorSprite" parent="." index="3"]
+texture = ExtResource( 2 )
+
+[node name="StaticBody2D" parent="DoorSprite" index="0"]
+visible = false
+
+[node name="LightOccluder2D" parent="DoorSprite" index="1"]
+visible = false
+occluder = SubResource( 1 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." index="4"]
+
+[node name="Numpad" parent="CanvasLayer" index="0" instance=ExtResource( 3 )]
+[connection signal="combination_correct" from="CanvasLayer/Numpad" to="." method="_on_Numpad_combination_correct"]

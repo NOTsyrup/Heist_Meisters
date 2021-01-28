@@ -47,7 +47,7 @@ tracks/1/keys = {
 extents = Vector2( 31.7971, 8.82462 )
 
 [sub_resource type="OccluderPolygon2D" id=4]
-polygon = PoolVector2Array( -31.9773, -8.88164, 31.7926, -8.9518, 32.1434, 9.0076, -31.837, 9.14791 )
+polygon = PoolVector2Array( -31.9773, 9.31691, -31.9356, -9.24571, 31.9282, -9.28742, 32.095, 9.40033 )
 
 [node name="Door" type="Area2D"]
 collision_layer = 2
@@ -75,6 +75,7 @@ collision_layer = 2
 collision_mask = 5
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoorSprite/StaticBody2D"]
+visible = false
 shape = SubResource( 3 )
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="DoorSprite"]
