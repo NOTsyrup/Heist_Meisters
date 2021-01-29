@@ -6,24 +6,34 @@ const NIGHTVISION = Color("37bf62")
 var sound_cooldown = false
 
 func _ready():
-	color = DARK
 	visible = true
+	color = DARK
 
 
 func cycle_vision_mode():
-	if color == DARK and not sound_cooldown:
+	if not sound_cooldown:
 		sound_cooldown = true
-		color = NIGHTVISION
-		$AudioStreamPlayer.stream = load("res://SFX/nightvision.wav")
-		$AudioStreamPlayer.play()
+		if color == DARK:
+			NIGHTVISION_mode()
+		else:
+			DARK_mode()
 		$Timer.start()
 		
-	if color == NIGHTVISION and not sound_cooldown:
-		sound_cooldown = true
-		color = DARK
-		$AudioStreamPlayer.stream = load("res://SFX/nightvision_off.wav")
-		$AudioStreamPlayer.play()
-		$Timer.start()
+		
+func DARK_mode():
+	color = DARK
+	$AudioStreamPlayer.stream = load("res://SFX/nightvision_off.wav")
+	$AudioStreamPlayer.play()
+	
+	get_tree().call_group("lights", "show")
+		
+		
+func NIGHTVISION_mode():
+	color = NIGHTVISION
+	$AudioStreamPlayer.stream = load("res://SFX/nightvision.wav")
+	$AudioStreamPlayer.play()
+	
+	get_tree().call_group("lights", "hide")
 
 
 func _on_Timer_timeout():
