@@ -1,6 +1,6 @@
 extends CanvasModulate
 
-const DARK = Color("1f1f1f")
+const DARK = Color("131313")
 const NIGHTVISION = Color("37bf62")
 
 var sound_cooldown = false
@@ -26,6 +26,8 @@ func DARK_mode():
 	$AudioStreamPlayer.play()
 	
 	get_tree().call_group("lights", "show")
+	get_tree().call_group("labels", "hide")
+	
 		
 		
 func NIGHTVISION_mode():
@@ -34,7 +36,7 @@ func NIGHTVISION_mode():
 	$AudioStreamPlayer.play()
 	
 	get_tree().call_group("lights", "hide")
-
+	get_tree().call_group("labels", "show")
 
 func _on_Timer_timeout():
 	sound_cooldown = false

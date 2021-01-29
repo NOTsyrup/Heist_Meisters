@@ -29,12 +29,12 @@ occluder = SubResource( 1 )
 [node name="Label" type="Label" parent="." index="5" groups=[
 "labels",
 ]]
-visible = false
-margin_left = -36.844
-margin_top = 17.9797
-margin_right = 43.156
-margin_bottom = 44.9797
+margin_left = -37.5114
+margin_top = -13.389
+margin_right = 42.4886
+margin_bottom = 13.611
 theme = ExtResource( 5 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Test"
 __meta__ = {
 "_edit_use_anchors_": false

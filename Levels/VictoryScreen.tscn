@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Levels/Lobby.tscn" type="PackedScene" id=1]
+
+[node name="VictoryScreen" instance=ExtResource( 1 )]
+
+[node name="Label" parent="CenterContainer/Background/VBoxContainer" index="0"]
+visible = false
+
+[node name="Label2" parent="CenterContainer/Background/VBoxContainer" index="1"]
+margin_top = 0.0
+margin_bottom = 111.0
+text = "You are victorious"
+autowrap = true
+
+[node name="Split" parent="CenterContainer/Background/VBoxContainer" index="2"]
+margin_top = 123.0
+margin_bottom = 135.0
+
+[node name="CenterContainer" parent="CenterContainer/Background/VBoxContainer" index="3"]
+margin_top = 147.0
+margin_bottom = 215.0
